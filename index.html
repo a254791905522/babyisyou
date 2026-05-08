@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baba Is You - Push Rules, Break Rules</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #F0F4F8;
+            color: #333;
+            line-height: 1.6;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #4A3B8C 50%, #7C6FAF 100%);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px 48px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        .hero h1 span { color: #FFD54F; }
+        .hero .subtitle {
+            font-size: 20px;
+            color: #c5b8e8;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        .hero .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.12);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #e0d6f0;
+        }
+        .screenshots-section {
+            padding: 48px 20px;
+            text-align: center;
+        }
+        .screenshots-section h2 {
+            font-size: 28px;
+            color: #1a1a2e;
+            margin-bottom: 32px;
+        }
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 14px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .screenshot-card {
+            background: #fff;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .screenshot-card:hover { transform: translateY(-4px); }
+        .screenshot-card img { width: 100%; display: block; }
+        .screenshot-card .label {
+            padding: 8px 12px;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+            font-weight: 500;
+        }
+        .features-section {
+            padding: 48px 20px;
+            background: #fff;
+        }
+        .features-section .inner { max-width: 720px; margin: 0 auto; }
+        .features-section h2 {
+            font-size: 28px;
+            color: #1a1a2e;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        @media (max-width: 600px) { .features-grid { grid-template-columns: 1fr; } }
+        .feature-item {
+            background: #f5f0fa;
+            border: 1px solid #e8e0f0;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .feature-item h3 { color: #4A3B8C; font-size: 16px; margin-bottom: 6px; }
+        .feature-item p { color: #555; font-size: 14px; }
+        .description-section { padding: 48px 20px; }
+        .description-section .inner {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .description-section h2 { font-size: 24px; color: #1a1a2e; margin-bottom: 16px; }
+        .description-section p { margin-bottom: 14px; color: #444; }
+        .info-box {
+            background: #1a1a2e;
+            color: #fff;
+            padding: 36px 20px;
+            text-align: center;
+        }
+        .info-box h3 { font-size: 20px; margin-bottom: 16px; color: #FFD54F; }
+        .info-box .info-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .info-box .info-item { text-align: center; }
+        .info-box .info-item strong { display: block; color: #FFD54F; font-size: 13px; margin-bottom: 4px; }
+        .info-box .info-item span { font-size: 15px; }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>BABA <span>IS YOU</span></h1>
+        <p class="subtitle">Push the Rules. Break the Rules. Win the Game.</p>
+        <div class="badge">A Puzzle Game Where You Change the Rules</div>
+    </div>
+
+    <div class="screenshots-section">
+        <h2>Gameplay</h2>
+        <div class="screenshots-grid">
+            <div class="screenshot-card">
+                <img src="screenshots_65/01_menu.png" alt="Main Menu">
+                <div class="label">Main Menu</div>
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots_65/02_level_select.png" alt="Level Select">
+                <div class="label">Level Select</div>
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots_65/03_gameplay_1.png" alt="Rules Puzzle">
+                <div class="label">Push the Rules</div>
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots_65/04_gameplay_2.png" alt="Solve Puzzle">
+                <div class="label">Solve the Puzzle</div>
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots_65/05_gameplay_3.png" alt="Advanced Puzzle">
+                <div class="label">Advanced Levels</div>
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots_65/06_gameplay_4.png" alt="Creative Thinking">
+                <div class="label">Think Different</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-section">
+        <div class="inner">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Rule-Bending Puzzles</h3>
+                    <p>Push word blocks to change the rules of the game. If WALL IS STOP, make WALL IS PUSH instead.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Think Outside the Box</h3>
+                    <p>Every level challenges your assumptions. The solution is never what you first expect.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Multiple Levels</h3>
+                    <p>Progress through increasingly complex puzzles that introduce new mechanics and concepts.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Pixel Art Style</h3>
+                    <p>Charming retro-inspired visuals with clear, readable game elements.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Undo & Retry</h3>
+                    <p>Unlimited undo lets you experiment freely. Every move can be reversed.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>100% Offline</h3>
+                    <p>No ads, no in-app purchases, no internet required. Pure puzzle-solving.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="description-section">
+        <div class="inner">
+            <h2>About the Game</h2>
+            <p>Baba Is You is a unique puzzle game where the rules themselves are puzzle pieces you can interact with. By pushing word blocks like "BABA", "IS", and "YOU", you literally change the rules of the game in real time.</p>
+            <p>Each level presents a grid-based puzzle with rule blocks that define how everything works. ROCK IS PUSH means rocks can be moved. FLAG IS WIN means touching the flag completes the level. But what if you rearrange the words? What if BABA IS WIN? Or WALL IS YOU?</p>
+            <p>The game challenges you to think creatively about the relationship between rules, objects, and goals. There's always more than one way to solve a puzzle — sometimes the most unexpected approach is the right one.</p>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <h3>App Information</h3>
+        <div class="info-grid">
+            <div class="info-item">
+                <strong>Genre</strong>
+                <span>Puzzle / Strategy</span>
+            </div>
+            <div class="info-item">
+                <strong>Compatibility</strong>
+                <span>iOS 13.0+</span>
+            </div>
+            <div class="info-item">
+                <strong>Age Rating</strong>
+                <span>4+</span>
+            </div>
+            <div class="info-item">
+                <strong>Size</strong>
+                <span>Lightweight</span>
+            </div>
+            <div class="info-item">
+                <strong>Languages</strong>
+                <span>English</span>
+            </div>
+            <div class="info-item">
+                <strong>Privacy</strong>
+                <span>No Data Collection</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
